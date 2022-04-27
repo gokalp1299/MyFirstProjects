@@ -1,0 +1,31 @@
+print("""
+
+HESAP MAKİNESİ
+
+Toplama İşlemi Yapmak İçin '1' e Basınız.
+Çıkarma İŞlemi Yapmak İçin '2' e Basınız.
+Çarpma İŞlemi Yapmak İçin '3' e Basınız.
+Bölme İŞlemi Yapmak İçin '4' e Basınız.
+
+""")
+
+islem = str(input("İşlem seçiniz:"))
+
+if islem == "1":
+    sayi1 = int(input("sayi1 giriniz:"))
+    sayi2 = int(input("sayi2 giriniz:"))
+    print("Sonuç:",sayi1 + sayi2)
+elif islem == "2":
+    sayi1 = int(input("sayi1 giriniz:"))
+    sayi2 = int(input("sayi2 giriniz:"))
+    print("Sonuç:",sayi1 - sayi2)
+elif islem == "3":
+    sayi1 = int(input(" sayi1 giriniz:"))
+    sayi2 = int(input(" sayi2 giriniz:"))
+    print("Sonuç:",sayi1 * sayi2)
+elif islem == "4":
+    sayi1 = int(input(" sayi1 giriniz:"))
+    sayi2 = int(input(" sayi2 giriniz:"))
+    print("Sonuç:",sayi1 / sayi2)
+else :
+    print('GEÇERSİZ İŞLEM GİRDİNİZ LÜTFEN TEKRAR DENEYİNİZ.')
