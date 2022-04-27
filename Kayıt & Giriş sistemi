@@ -1,0 +1,14 @@
+inpVal1 = input('Kayıt olmak için lütfen "KATIL" yazınız:')
+islem = 'İşlem Doğru.Sıradaki yere geçiniz.'
+islem2 = 'İşlem Hatalı.Lütfen komut kodunu doğru giriniz.'
+if inpVal1 == 'KATIL' :
+    print(islem)
+    inpVal2 = input('Adınız:')
+    inpVal3 = input('Soyadınız:')
+    inpVal4 = input('E-Mail adresiniz:')
+    inpVal5 = input('Onaylama Kodu:')
+    print('Kayıt için gereken komut: {} , Adınız: {} , Soyadınız: {} , Mail Adresiniz: {} , Onaylama Kodunuz: {}'.format(inpVal1 , inpVal2 , inpVal3 , inpVal4 , inpVal5))
+
+else:
+    print('İşlem Başarısız')
+    print('Lütfen geçerli komutu giriniz.')
