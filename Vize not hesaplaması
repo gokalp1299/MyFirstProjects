@@ -1,0 +1,17 @@
+while True:
+    intVize = int(input('Vize Notunuz:'))
+    intFinal = int(input('Final Notunuz:'))
+    intQuiz = int(input('Quiz Notunuz:'))
+    intRw = int(input('RW Notunuz:'))
+    intLS = int(input('LS Notunuz:'))
+
+    intsonuc = 0.2 * intVize + 0.4 * intFinal + 0.15 * intQuiz + 0.15 * intRw + 0.1 * intLS
+    print('Not ortalaması=', intsonuc)
+    if intsonuc > 85 :
+        print('Notunuz : A')
+    elif intsonuc <= 85 and intsonuc > 60:
+        print('Notunuz : B')
+    elif intsonuc <= 60 and intsonuc > 45:
+        print('Notunuz :C')
+    else :
+        print('Notunuz :F')
