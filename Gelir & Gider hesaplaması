@@ -1,0 +1,16 @@
+while True:
+    intElectric = int(input('Elektirik gider:'))
+    intWater = int(input('Su gider:'))
+    intNaturalGas = int(input('Doğal gaz gider:'))
+    intRent = int(input('Kira gider:'))
+    intCleaning = int(input('Temizlik gider:'))
+    intTax = int(input('Vergi:'))
+
+    intsonuc = intElectric + intWater + intNaturalGas + intRent + intCleaning + intTax
+    print('Toplam gider:', intsonuc)
+    if intsonuc > 10000:
+        print('Gideriniz gelirinizden yüksek.')
+    elif intsonuc == 10000:
+        print('Gideriniz geliriniz ile aynı.')
+    else:
+        print('Gideriniz gelirinizden düşük.')
