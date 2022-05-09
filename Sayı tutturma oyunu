@@ -1,0 +1,24 @@
+import random
+print('''
+***SAYI TAHMİN OYUNU***
+"1-50" arası bir sayı tahmin ediniz.
+3 yanlış hakkınız vardır.
+İYİ OYUNLAR :)
+''')
+randomnumval = random.randint(1,50)
+falseval = 5
+
+while True:
+    num = int(input('Tahmininiz:'))
+    if num < randomnumval:
+        print('Tahmininz yanlış lütfen tahmin değerinizi yükseltin.')
+        falseval -= 1
+    elif num > randomnumval:
+        print('Tahmininz yanlış lütfen tahmin değerinizi azaltınız.')
+        falseval -= 1
+    else:
+        print('Tahmininiz doğru tebrikler. Sayı:',randomnumval)
+        break
+    if falseval == 0:
+        print('Tahmin hakkınız bitmiştir lütfen tekrar başlayınız.')
+        break
