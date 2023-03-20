@@ -1,0 +1,25 @@
+import numpy as np
+def char_range(c1,c2):
+  for c in range(ord(c1),ord(c2)+1):
+    yield chr(c)
+
+num=list(range(10))
+chars = []
+
+char_lenght = 20
+
+for harf in char_range('a', 'z'):
+    chars.append(harf)
+    chars.append(harf.upper())
+    chars
+
+words = []
+output = ""
+
+for i in range(char_lenght):
+	added_value=np.random.uniform(0,len(chars))
+	added_value=int(added_value)
+	words.append(chars[added_value])
+	output+=str(words[i])
+ 
+print(output)
