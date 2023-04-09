@@ -1,0 +1,132 @@
+import 'package:flutter/Material.dart';
+
+void main() {
+  runApp(DevApp());
+}
+
+class DevApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return  MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.brown[300],
+        body: SafeArea(
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 90,
+                  backgroundImage: AssetImage('assests/images/kahve.jpg'),
+                ),
+                SizedBox(
+                  height: 25,
+                ),
+                Text('Çerkes kahvecisi',
+                  style: TextStyle(
+                    color: Colors.brown[800],
+                    fontSize: 60,
+                    fontFamily: 'Inspiration',
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text('1.99 metre uzağında',
+                  style: TextStyle(
+                    color: Colors.pink[50],
+                    fontSize: 20,
+                  ),
+                ),
+                SizedBox(
+                  height: 25,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 45,
+                  ),
+                  padding: EdgeInsets.all(10),
+                  color: Colors.brown[900],
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text('kahveci_altay@gmail.com',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 45,
+                  ),
+                  padding: EdgeInsets.all(10),
+                  color: Colors.brown[900],
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text('+90 531 311 31 31',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 45,
+                  ),
+                  padding: EdgeInsets.all(10),
+                  color: Colors.brown[900],
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.camera_alt_outlined,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        '@kahveci.cerkes',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
