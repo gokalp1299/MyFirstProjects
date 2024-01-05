@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veritabaniodev", "Veritabaniodev\Veritabaniodev.csproj", "{33569A7E-B905-469C-9EEF-C6539E489AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33569A7E-B905-469C-9EEF-C6539E489AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33569A7E-B905-469C-9EEF-C6539E489AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33569A7E-B905-469C-9EEF-C6539E489AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33569A7E-B905-469C-9EEF-C6539E489AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB7EC09A-17CB-4F83-A033-DD61458590F4}
+	EndGlobalSection
+EndGlobal
